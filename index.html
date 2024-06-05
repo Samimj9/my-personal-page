@@ -23,7 +23,7 @@
         header h1 {
             color: #E53935;
             margin: 0;
-            animation: fadeInDown 1s;
+            animation: fadeInText 1s;
         }
         nav {
             background-color: #444444;
@@ -88,10 +88,10 @@
                 opacity: 1;
             }
         }
-        @keyframes fadeInDown {
+        @keyframes fadeInText {
             from {
                 opacity: 0;
-                transform: translateY(-20px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
@@ -111,7 +111,7 @@
 </head>
 <body>
     <header>
-        <h1>Sami al Majanini</h1>
+        <h1 class="animated-text">Sami al Majanini</h1>
     </header>
     <nav>
         <a href="#about-me">About Me</a>
@@ -124,19 +124,19 @@
         <section id="about-me">
             <h2>About Me</h2>
             <img src="269007343_1019045888952741_5422660034729831182_n.jpg" alt="Sami al Majanini">
-            <p>My name is Sami al Majanini. I am from Tripoli, Al Mina. I am 23 years old and currently a biomedical engineering student at City University. I work on AI projects in the medical field. I like to swim and read books.</p>
+            <p class="animated-text">My name is Sami al Majanini. I am from Tripoli, Al Mina. I am 23 years old and currently a biomedical engineering student at City University. I work on AI projects in the medical field. I like to swim and read books.</p>
         </section>
         <section id="education">
             <h2>Education</h2>
-            <p>Currently studying Biomedical Engineering at City University.</p>
+            <p class="animated-text">Currently studying Biomedical Engineering at City University.</p>
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <p>Working on AI projects in the medical field.</p>
+            <p class="animated-text">Working on AI projects in the medical field.</p>
         </section>
         <section id="hobbies">
             <h2>Hobbies</h2>
-            <p>I enjoy swimming and reading books.</p>
+            <p class="animated-text">I enjoy swimming and reading books.</p>
         </section>
         <section id="contact-info">
             <h2>Contact Information</h2>
@@ -151,15 +151,8 @@
     </footer>
 
     <script>
-        // JavaScript function to toggle visibility of a section
-        function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section.style.display === "none") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
-        }
+        // Your existing JavaScript code
     </script>
 </body>
 </html>
+
